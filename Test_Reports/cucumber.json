@@ -1,0 +1,180 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 5,
+        "name": "Customer performs search using specified filters and orders the results",
+        "description": "",
+        "id": "search-products;customer-performs-search-using-specified-filters-and-orders-the-results",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 9863394199,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user goes to Ebay Home page",
+            "match": {
+              "location": "e2e_SearchProductsSteps.user_goes_to_Ebay_home_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 11213818800,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user searches for \"shoes\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "shoes",
+                  "offset": 19
+                }
+              ],
+              "location": "e2e_SearchProductsSteps.searches_for(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 157451401,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "search results are shown",
+            "match": {
+              "location": "e2e_SearchProductsSteps.search_results_are_loaded()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 97000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "selects brand \"PUMA\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "PUMA",
+                  "offset": 15
+                }
+              ],
+              "location": "e2e_SearchProductsSteps.selects_brand(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 89100,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "selects size \"10\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "10",
+                  "offset": 14
+                }
+              ],
+              "location": "e2e_SearchProductsSteps.selects_size(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 31800,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "the test prints in console the number of results",
+            "match": {
+              "location": "e2e_SearchProductsSteps.prints_in_console_the_numbers_of_results()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 105501,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "user orders the products by \"price\" in \"ascendant\" mode",
+            "match": {
+              "arguments": [
+                {
+                  "val": "price",
+                  "offset": 29
+                },
+                {
+                  "val": "ascendant",
+                  "offset": 40
+                }
+              ],
+              "location": "e2e_SearchProductsSteps.orders_the_products_by(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 111800,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "the test asserts the order taking the first \"5\" results",
+            "match": {
+              "arguments": [
+                {
+                  "val": "5",
+                  "offset": 45
+                }
+              ],
+              "location": "e2e_SearchProductsSteps.asserts_the_order_taking_the_first_results(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 115601,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "the test takes the first \"5\" products with their prices",
+            "match": {
+              "arguments": [
+                {
+                  "val": "5",
+                  "offset": 26
+                }
+              ],
+              "location": "e2e_SearchProductsSteps.takes_the_first_products_with_their_prices(String)"
+            },
+            "keyword": "When "
+          }
+        ],
+        "tags": [
+          {
+            "line": 4,
+            "name": "@End2EndTest"
+          },
+          {
+            "line": 4,
+            "name": "@RegressionTest"
+          }
+        ]
+      }
+    ],
+    "name": "Search Products",
+    "description": "Description: The purpose of this feature is to tests End 2 End - Search products on Ebay",
+    "id": "search-products",
+    "keyword": "Feature",
+    "uri": "e2e_SearchProducts.feature"
+  }
+]
