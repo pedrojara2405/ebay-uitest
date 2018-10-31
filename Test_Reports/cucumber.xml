@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="21.235215">
-    <testcase classname="Search Products" name="Customer performs search using specified filters and orders the results"
-              time="21.235215">
-        <system-out><![CDATA[Given user goes to Ebay Home page...........................................passed
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="28.545004">
+<testcase classname="Search Products" name="Customer performs search using specified filters and orders the results" time="28.545004">
+<system-out><![CDATA[Given user goes to Ebay Home page...........................................passed
 When user searches for "shoes"..............................................passed
 Then search results are shown...............................................passed
 When selects brand "PUMA"...................................................passed
-And selects size "10".......................................................passed
+Then search results are shown...............................................passed
+When selects size "10"......................................................passed
+Then search results are shown...............................................passed
 Then the test prints in console the number of results.......................passed
 When user orders the products by "price" in "ascendant" mode................passed
 Then the test asserts the order taking the first "5" results................passed
 When the test takes the first "5" products with their prices................passed
 ]]></system-out>
-    </testcase>
+</testcase>
 </testsuite>

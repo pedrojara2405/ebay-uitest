@@ -12,7 +12,7 @@
         "steps": [
           {
             "result": {
-              "duration": 9863394199,
+              "duration": 15545919700,
               "status": "passed"
             },
             "line": 6,
@@ -24,7 +24,7 @@
           },
           {
             "result": {
-              "duration": 11213818800,
+              "duration": 12855212700,
               "status": "passed"
             },
             "line": 7,
@@ -42,7 +42,7 @@
           },
           {
             "result": {
-              "duration": 157451401,
+              "duration": 73242100,
               "status": "passed"
             },
             "line": 8,
@@ -54,7 +54,7 @@
           },
           {
             "result": {
-              "duration": 97000,
+              "duration": 68300,
               "status": "passed"
             },
             "line": 9,
@@ -72,10 +72,22 @@
           },
           {
             "result": {
-              "duration": 89100,
+              "duration": 35650100,
               "status": "passed"
             },
             "line": 10,
+            "name": "search results are shown",
+            "match": {
+              "location": "e2e_SearchProductsSteps.search_results_are_loaded()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 123400,
+              "status": "passed"
+            },
+            "line": 11,
             "name": "selects size \"10\"",
             "match": {
               "arguments": [
@@ -86,14 +98,26 @@
               ],
               "location": "e2e_SearchProductsSteps.selects_size(String)"
             },
-            "keyword": "And "
+            "keyword": "When "
           },
           {
             "result": {
-              "duration": 31800,
+              "duration": 34447200,
               "status": "passed"
             },
-            "line": 11,
+            "line": 12,
+            "name": "search results are shown",
+            "match": {
+              "location": "e2e_SearchProductsSteps.search_results_are_loaded()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 36900,
+              "status": "passed"
+            },
+            "line": 13,
             "name": "the test prints in console the number of results",
             "match": {
               "location": "e2e_SearchProductsSteps.prints_in_console_the_numbers_of_results()"
@@ -102,10 +126,10 @@
           },
           {
             "result": {
-              "duration": 105501,
+              "duration": 127200,
               "status": "passed"
             },
-            "line": 12,
+            "line": 14,
             "name": "user orders the products by \"price\" in \"ascendant\" mode",
             "match": {
               "arguments": [
@@ -124,10 +148,10 @@
           },
           {
             "result": {
-              "duration": 111800,
+              "duration": 80400,
               "status": "passed"
             },
-            "line": 13,
+            "line": 15,
             "name": "the test asserts the order taking the first \"5\" results",
             "match": {
               "arguments": [
@@ -142,10 +166,10 @@
           },
           {
             "result": {
-              "duration": 115601,
+              "duration": 96200,
               "status": "passed"
             },
-            "line": 14,
+            "line": 16,
             "name": "the test takes the first \"5\" products with their prices",
             "match": {
               "arguments": [

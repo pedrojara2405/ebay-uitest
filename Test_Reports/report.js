@@ -46,26 +46,36 @@ formatter.step({
 });
 formatter.step({
   "line": 10,
-  "name": "selects size \"10\"",
-  "keyword": "And "
+  "name": "search results are shown",
+  "keyword": "Then "
 });
 formatter.step({
   "line": 11,
+  "name": "selects size \"10\"",
+  "keyword": "When "
+});
+formatter.step({
+  "line": 12,
+  "name": "search results are shown",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 13,
   "name": "the test prints in console the number of results",
   "keyword": "Then "
 });
 formatter.step({
-  "line": 12,
+  "line": 14,
   "name": "user orders the products by \"price\" in \"ascendant\" mode",
   "keyword": "When "
 });
 formatter.step({
-  "line": 13,
+  "line": 15,
   "name": "the test asserts the order taking the first \"5\" results",
   "keyword": "Then "
 });
 formatter.step({
-  "line": 14,
+  "line": 16,
   "name": "the test takes the first \"5\" products with their prices",
   "keyword": "When "
 });
@@ -73,7 +83,7 @@ formatter.match({
   "location": "e2e_SearchProductsSteps.user_goes_to_Ebay_home_page()"
 });
 formatter.result({
-  "duration": 9863394199,
+  "duration": 15545919700,
   "status": "passed"
 });
 formatter.match({
@@ -86,14 +96,14 @@ formatter.match({
   "location": "e2e_SearchProductsSteps.searches_for(String)"
 });
 formatter.result({
-  "duration": 11213818800,
+  "duration": 12855212700,
   "status": "passed"
 });
 formatter.match({
   "location": "e2e_SearchProductsSteps.search_results_are_loaded()"
 });
 formatter.result({
-  "duration": 157451401,
+  "duration": 73242100,
   "status": "passed"
 });
 formatter.match({
@@ -106,7 +116,14 @@ formatter.match({
   "location": "e2e_SearchProductsSteps.selects_brand(String)"
 });
 formatter.result({
-  "duration": 97000,
+  "duration": 68300,
+  "status": "passed"
+});
+formatter.match({
+  "location": "e2e_SearchProductsSteps.search_results_are_loaded()"
+});
+formatter.result({
+  "duration": 35650100,
   "status": "passed"
 });
 formatter.match({
@@ -119,14 +136,21 @@ formatter.match({
   "location": "e2e_SearchProductsSteps.selects_size(String)"
 });
 formatter.result({
-  "duration": 89100,
+  "duration": 123400,
+  "status": "passed"
+});
+formatter.match({
+  "location": "e2e_SearchProductsSteps.search_results_are_loaded()"
+});
+formatter.result({
+  "duration": 34447200,
   "status": "passed"
 });
 formatter.match({
   "location": "e2e_SearchProductsSteps.prints_in_console_the_numbers_of_results()"
 });
 formatter.result({
-  "duration": 31800,
+  "duration": 36900,
   "status": "passed"
 });
 formatter.match({
@@ -143,7 +167,7 @@ formatter.match({
   "location": "e2e_SearchProductsSteps.orders_the_products_by(String,String)"
 });
 formatter.result({
-  "duration": 105501,
+  "duration": 127200,
   "status": "passed"
 });
 formatter.match({
@@ -156,7 +180,7 @@ formatter.match({
   "location": "e2e_SearchProductsSteps.asserts_the_order_taking_the_first_results(String)"
 });
 formatter.result({
-  "duration": 111800,
+  "duration": 80400,
   "status": "passed"
 });
 formatter.match({
@@ -169,7 +193,7 @@ formatter.match({
   "location": "e2e_SearchProductsSteps.takes_the_first_products_with_their_prices(String)"
 });
 formatter.result({
-  "duration": 115601,
+  "duration": 96200,
   "status": "passed"
 });
 });

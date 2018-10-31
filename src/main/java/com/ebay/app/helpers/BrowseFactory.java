@@ -1,4 +1,4 @@
-package com.ebay.app.utils;
+package com.ebay.app.helpers;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;

@@ -1,4 +1,4 @@
-package com.ebay.app.utils;
+package com.ebay.app.helpers;
 
 import org.openqa.selenium.By;
 

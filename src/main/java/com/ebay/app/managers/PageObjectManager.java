@@ -10,8 +10,8 @@ public class PageObjectManager {
     private HomePage _homePage;
     private SearchPage _searchPage;
     private SearchResultsPage _searchResultsPage;
-    private SelectSearchBrandFilterPage _selectSearchBrandFilterPage;
-    private SelectSearchSizeFilterPage _selectSearchSizeFilterPage;
+    private SearchBrandFilterPage _searchBrandFilterPage;
+    private SearchSizeFilterPage _searchSizeFilterPage;
     private ConsoleResultsPage _consoleResultsPage;
 
     public PageObjectManager(WebDriver driver) {
@@ -30,12 +30,12 @@ public class PageObjectManager {
         return (_searchResultsPage == null) ? _searchResultsPage = new SearchResultsPage(_driver) : _searchResultsPage;
     }
 
-    public SelectSearchBrandFilterPage getSelectSearchBrandFilterPage() {
-        return (_selectSearchBrandFilterPage == null) ? _selectSearchBrandFilterPage = new SelectSearchBrandFilterPage(_driver) : _selectSearchBrandFilterPage;
+    public SearchBrandFilterPage getSearchBrandFilterPage() {
+        return (_searchBrandFilterPage == null) ? _searchBrandFilterPage = new SearchBrandFilterPage(_driver) : _searchBrandFilterPage;
     }
 
-    public SelectSearchSizeFilterPage getSelectSearchSizeFilterPage() {
-        return (_selectSearchSizeFilterPage == null) ? _selectSearchSizeFilterPage = new SelectSearchSizeFilterPage(_driver) : _selectSearchSizeFilterPage;
+    public SearchSizeFilterPage getSearchSizeFilterPage() {
+        return (_searchSizeFilterPage == null) ? _searchSizeFilterPage = new SearchSizeFilterPage(_driver) : _searchSizeFilterPage;
     }
 
     public ConsoleResultsPage getConsoleResultsPage() {
