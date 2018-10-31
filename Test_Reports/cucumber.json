@@ -3,28 +3,50 @@
     "line": 1,
     "elements": [
       {
+        "before": [
+          {
+            "result": {
+              "duration": 11532213100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.BeforeSteps()"
+            }
+          }
+        ],
         "line": 5,
         "name": "Customer performs search using specified filters and orders the results",
         "description": "",
         "id": "search-products;customer-performs-search-using-specified-filters-and-orders-the-results",
+        "after": [
+          {
+            "result": {
+              "duration": 2937040800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.AfterSteps()"
+            }
+          }
+        ],
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 15545919700,
+              "duration": 4935006200,
               "status": "passed"
             },
             "line": 6,
             "name": "user goes to Ebay Home page",
             "match": {
-              "location": "e2e_SearchProductsSteps.user_goes_to_Ebay_home_page()"
+              "location": "HomePageSteps.user_goes_to_Ebay_home_page()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 12855212700,
+              "duration": 12035884900,
               "status": "passed"
             },
             "line": 7,
@@ -36,25 +58,25 @@
                   "offset": 19
                 }
               ],
-              "location": "e2e_SearchProductsSteps.searches_for(String)"
+              "location": "SearchPageSteps.searches_for(String)"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 73242100,
+              "duration": 53856500,
               "status": "passed"
             },
             "line": 8,
             "name": "search results are shown",
             "match": {
-              "location": "e2e_SearchProductsSteps.search_results_are_loaded()"
+              "location": "SearchResultsPageSteps.search_results_are_loaded()"
             },
             "keyword": "Then "
           },
           {
             "result": {
-              "duration": 68300,
+              "duration": 246000,
               "status": "passed"
             },
             "line": 9,
@@ -66,25 +88,25 @@
                   "offset": 15
                 }
               ],
-              "location": "e2e_SearchProductsSteps.selects_brand(String)"
+              "location": "SearchBrandFilterPageSteps.selects_brand(String)"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 35650100,
+              "duration": 25506000,
               "status": "passed"
             },
             "line": 10,
             "name": "search results are shown",
             "match": {
-              "location": "e2e_SearchProductsSteps.search_results_are_loaded()"
+              "location": "SearchResultsPageSteps.search_results_are_loaded()"
             },
             "keyword": "Then "
           },
           {
             "result": {
-              "duration": 123400,
+              "duration": 248200,
               "status": "passed"
             },
             "line": 11,
@@ -96,37 +118,37 @@
                   "offset": 14
                 }
               ],
-              "location": "e2e_SearchProductsSteps.selects_size(String)"
+              "location": "SearchSizeFilterPageSteps.selects_size(String)"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 34447200,
+              "duration": 40454200,
               "status": "passed"
             },
             "line": 12,
             "name": "search results are shown",
             "match": {
-              "location": "e2e_SearchProductsSteps.search_results_are_loaded()"
+              "location": "SearchResultsPageSteps.search_results_are_loaded()"
             },
             "keyword": "Then "
           },
           {
             "result": {
-              "duration": 36900,
+              "duration": 189700,
               "status": "passed"
             },
             "line": 13,
             "name": "the test prints in console the number of results",
             "match": {
-              "location": "e2e_SearchProductsSteps.prints_in_console_the_numbers_of_results()"
+              "location": "ConsoleResultsPageSteps.prints_in_console_the_numbers_of_results()"
             },
             "keyword": "Then "
           },
           {
             "result": {
-              "duration": 127200,
+              "duration": 55100,
               "status": "passed"
             },
             "line": 14,
@@ -142,13 +164,13 @@
                   "offset": 40
                 }
               ],
-              "location": "e2e_SearchProductsSteps.orders_the_products_by(String,String)"
+              "location": "SearchResultsPageSteps.orders_the_products_by(String,String)"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 80400,
+              "duration": 37700,
               "status": "passed"
             },
             "line": 15,
@@ -160,13 +182,13 @@
                   "offset": 45
                 }
               ],
-              "location": "e2e_SearchProductsSteps.asserts_the_order_taking_the_first_results(String)"
+              "location": "ConsoleResultsPageSteps.asserts_the_order_taking_the_first_results(String)"
             },
             "keyword": "Then "
           },
           {
             "result": {
-              "duration": 96200,
+              "duration": 49700,
               "status": "passed"
             },
             "line": 16,
@@ -178,7 +200,7 @@
                   "offset": 26
                 }
               ],
-              "location": "e2e_SearchProductsSteps.takes_the_first_products_with_their_prices(String)"
+              "location": "SearchResultsPageSteps.takes_the_first_products_with_their_prices(String)"
             },
             "keyword": "When "
           }

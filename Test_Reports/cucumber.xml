@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="28.545004">
-<testcase classname="Search Products" name="Customer performs search using specified filters and orders the results" time="28.545004">
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="31.560788">
+<testcase classname="Search Products" name="Customer performs search using specified filters and orders the results" time="31.560788">
 <system-out><![CDATA[Given user goes to Ebay Home page...........................................passed
 When user searches for "shoes"..............................................passed
 Then search results are shown...............................................passed

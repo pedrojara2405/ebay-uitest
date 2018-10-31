@@ -6,6 +6,10 @@ formatter.feature({
   "id": "search-products",
   "keyword": "Feature"
 });
+formatter.before({
+  "duration": 11532213100,
+  "status": "passed"
+});
 formatter.scenario({
   "line": 5,
   "name": "Customer performs search using specified filters and orders the results",
@@ -80,10 +84,10 @@ formatter.step({
   "keyword": "When "
 });
 formatter.match({
-  "location": "e2e_SearchProductsSteps.user_goes_to_Ebay_home_page()"
+  "location": "HomePageSteps.user_goes_to_Ebay_home_page()"
 });
 formatter.result({
-  "duration": 15545919700,
+  "duration": 4935006200,
   "status": "passed"
 });
 formatter.match({
@@ -93,17 +97,17 @@ formatter.match({
       "offset": 19
     }
   ],
-  "location": "e2e_SearchProductsSteps.searches_for(String)"
+  "location": "SearchPageSteps.searches_for(String)"
 });
 formatter.result({
-  "duration": 12855212700,
+  "duration": 12035884900,
   "status": "passed"
 });
 formatter.match({
-  "location": "e2e_SearchProductsSteps.search_results_are_loaded()"
+  "location": "SearchResultsPageSteps.search_results_are_loaded()"
 });
 formatter.result({
-  "duration": 73242100,
+  "duration": 53856500,
   "status": "passed"
 });
 formatter.match({
@@ -113,17 +117,17 @@ formatter.match({
       "offset": 15
     }
   ],
-  "location": "e2e_SearchProductsSteps.selects_brand(String)"
+  "location": "SearchBrandFilterPageSteps.selects_brand(String)"
 });
 formatter.result({
-  "duration": 68300,
+  "duration": 246000,
   "status": "passed"
 });
 formatter.match({
-  "location": "e2e_SearchProductsSteps.search_results_are_loaded()"
+  "location": "SearchResultsPageSteps.search_results_are_loaded()"
 });
 formatter.result({
-  "duration": 35650100,
+  "duration": 25506000,
   "status": "passed"
 });
 formatter.match({
@@ -133,24 +137,24 @@ formatter.match({
       "offset": 14
     }
   ],
-  "location": "e2e_SearchProductsSteps.selects_size(String)"
+  "location": "SearchSizeFilterPageSteps.selects_size(String)"
 });
 formatter.result({
-  "duration": 123400,
+  "duration": 248200,
   "status": "passed"
 });
 formatter.match({
-  "location": "e2e_SearchProductsSteps.search_results_are_loaded()"
+  "location": "SearchResultsPageSteps.search_results_are_loaded()"
 });
 formatter.result({
-  "duration": 34447200,
+  "duration": 40454200,
   "status": "passed"
 });
 formatter.match({
-  "location": "e2e_SearchProductsSteps.prints_in_console_the_numbers_of_results()"
+  "location": "ConsoleResultsPageSteps.prints_in_console_the_numbers_of_results()"
 });
 formatter.result({
-  "duration": 36900,
+  "duration": 189700,
   "status": "passed"
 });
 formatter.match({
@@ -164,10 +168,10 @@ formatter.match({
       "offset": 40
     }
   ],
-  "location": "e2e_SearchProductsSteps.orders_the_products_by(String,String)"
+  "location": "SearchResultsPageSteps.orders_the_products_by(String,String)"
 });
 formatter.result({
-  "duration": 127200,
+  "duration": 55100,
   "status": "passed"
 });
 formatter.match({
@@ -177,10 +181,10 @@ formatter.match({
       "offset": 45
     }
   ],
-  "location": "e2e_SearchProductsSteps.asserts_the_order_taking_the_first_results(String)"
+  "location": "ConsoleResultsPageSteps.asserts_the_order_taking_the_first_results(String)"
 });
 formatter.result({
-  "duration": 80400,
+  "duration": 37700,
   "status": "passed"
 });
 formatter.match({
@@ -190,10 +194,14 @@ formatter.match({
       "offset": 26
     }
   ],
-  "location": "e2e_SearchProductsSteps.takes_the_first_products_with_their_prices(String)"
+  "location": "SearchResultsPageSteps.takes_the_first_products_with_their_prices(String)"
 });
 formatter.result({
-  "duration": 96200,
+  "duration": 49700,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 2937040800,
   "status": "passed"
 });
 });
