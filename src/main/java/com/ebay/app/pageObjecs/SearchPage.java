@@ -37,6 +37,6 @@ public class SearchPage {
     public void perform_Search_By_Criteria(String searchCriteria) throws InterruptedException {
         enter_SearchCriteria(searchCriteria);
         clickOn_Search();
-        Thread.sleep(10000);
+        //Thread.sleep(10000);
     }
 }

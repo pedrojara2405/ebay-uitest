@@ -1,16 +1,15 @@
 Feature: Search Products
   Description: The purpose of this feature is to tests End 2 End - Search products on Ebay
 
-  @End2EndTest @RegressionTest
+  @End2EndTest
   Scenario: Customer performs search using specified filters and orders the results
     Given user goes to Ebay Home page
     When user searches for "shoes"
-    Then search results are shown
     When selects brand "PUMA"
-    Then search results are shown
     When selects size "10"
     Then search results are shown
     Then the test prints in console the number of results
+
     When user orders the products by "price" in "ascendant" mode
     Then the test asserts the order taking the first "5" results
     When the test takes the first "5" products with their prices

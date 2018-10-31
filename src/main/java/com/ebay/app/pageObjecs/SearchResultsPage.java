@@ -33,10 +33,11 @@ public class SearchResultsPage {
     public void printSearchResults(String count, String criteria)
     {
         String result = String.format("Selected filters: %s - Total results: %s",criteria,count);
-        System.console().writer().println(result);
+        //System.out.println(result);
     }
 
-    public boolean isShown_ResultsCount() {
+    public boolean isShown_ResultsCount() throws InterruptedException {
+        Thread.sleep(5000);
         String totalResults = get_ResultsCount();
         String selectedFilters = get_SelectedFilters();
         printSearchResults(selectedFilters, totalResults);

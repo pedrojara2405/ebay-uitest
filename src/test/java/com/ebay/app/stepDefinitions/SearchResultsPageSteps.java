@@ -20,7 +20,7 @@ public class SearchResultsPageSteps {
     }
 
     @Then("^search results are shown$")
-    public void search_results_are_loaded() {
+    public void search_results_are_loaded() throws InterruptedException {
         Assert.assertTrue(_searchResultsPage.isShown_ResultsCount(), "Error showing search results count");
     }
 

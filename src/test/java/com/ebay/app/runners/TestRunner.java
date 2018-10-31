@@ -13,9 +13,7 @@ import java.io.File;
 @CucumberOptions(
         features = "src/test/resources/functionalTests"
         , glue = {"com/ebay/app/stepDefinitions"}
-        //,dryRun = true
-        //,strict = true
-        , tags = {"@Ignored,@End2EndTest", "@RegressionTest"}
+        , tags = {"@Ignored,@End2EndTest"}
         , plugin = {"pretty", "html:target/cucumber-reports",
         "json:target/cucumber-reports/cucumber.json",
         "junit:target/cucumber-reports/cucumber.xml"}
