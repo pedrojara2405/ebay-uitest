@@ -30,7 +30,16 @@ public class SearchResultsPage {
         PageFactory.initElements(driver, this);
     }
 
+    public void printSearchResults(String count, String criteria)
+    {
+        String result = String.format("Selected filters: %s - Total results: %s",criteria,count);
+        System.console().writer().println(result);
+    }
+
     public boolean isShown_ResultsCount() {
+        String totalResults = get_ResultsCount();
+        String selectedFilters = get_SelectedFilters();
+        printSearchResults(selectedFilters, totalResults);
         return _lbl_ResultsCount.isDisplayed();
     }
 
@@ -38,7 +47,7 @@ public class SearchResultsPage {
         return _lbl_ResultsCount.getText();
     }
 
-    public String get_CriteriaInResults() {
+    public String get_SelectedFilters() {
         return _lbl_CriteriaInResults.getText();
     }
 }

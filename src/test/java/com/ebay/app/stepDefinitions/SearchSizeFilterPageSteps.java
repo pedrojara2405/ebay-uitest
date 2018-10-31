@@ -19,6 +19,6 @@ public class SearchSizeFilterPageSteps {
 
     @When("^selects size \"([^\"]*)\"$")
     public void selects_size(String size) {
-        //_driver.navigate().to("http://shop.demoqa.com/?s=" + something + "&post_type=product");
+        _searchSizeFilterPage.check_SizeItem(size,false);
     }
 }

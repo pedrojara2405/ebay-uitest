@@ -18,7 +18,7 @@ public class SearchPageSteps {
     }
 
     @When("^user searches for \"([^\"]*)\"$")
-    public void searches_for(String searchCriteria) {
+    public void searches_for(String searchCriteria) throws InterruptedException {
         _searchPage.perform_Search_By_Criteria(searchCriteria);
     }
 }

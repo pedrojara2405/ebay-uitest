@@ -11,4 +11,10 @@ public class ConsoleResultsPage {
         this._driver = driver;
         PageFactory.initElements(driver, this);
     }
+
+    public void printSearchResults(String count, String criteria)
+    {
+        String result = String.format("Selected filters: %s - Total results: %s",criteria,count);
+        System.console().writer().println(result);
+    }
 }

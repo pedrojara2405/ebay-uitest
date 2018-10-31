@@ -1,8 +1,13 @@
 package com.ebay.app.runners;
 
+import com.ebay.app.managers.FileReaderManager;
+import com.vimalselvam.cucumber.listener.Reporter;
 import cucumber.api.CucumberOptions;
 import cucumber.api.junit.Cucumber;
+import org.junit.AfterClass;
 import org.junit.runner.RunWith;
+
+import java.io.File;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
@@ -11,9 +16,18 @@ import org.junit.runner.RunWith;
         //,dryRun = true
         //,strict = true
         , tags = {"@Ignored,@End2EndTest", "@RegressionTest"}
-        , plugin = {"pretty", "html:Test_Reports",
-        "json:Test_Reports/cucumber.json",
-        "junit:Test_Reports/cucumber.xml"}
+        , plugin = {"pretty", "html:target/cucumber-reports",
+        "json:target/cucumber-reports/cucumber.json",
+        "junit:target/cucumber-reports/cucumber.xml"}
+
+        /*,plugin = { "com.vimalselvam.cucumber.listener.ExtentCucumberFormatter:target/cucumber-reports/report.html",
+        "json:target/cucumber-reports/cucumber.json",
+        "junit:target/cucumber-reports/cucumber.xml"}*/
+        ,monochrome = true
 )
 public class TestRunner {
+    @AfterClass
+    public static void writeExtentReport() {
+        //Reporter.loadXMLConfig(new File(FileReaderManager.getInstance().getConfigReader().getReportConfigPath()));
+    }
 }

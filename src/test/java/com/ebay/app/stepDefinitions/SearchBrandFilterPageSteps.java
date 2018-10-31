@@ -19,6 +19,6 @@ public class SearchBrandFilterPageSteps {
 
     @When("^selects brand \"([^\"]*)\"$")
     public void selects_brand(String brand) {
-        //_driver.navigate().to("http://shop.demoqa.com/?s=" + something + "&post_type=product");
+        _searchBrandFilterPage.check_BrandItem(brand,false);
     }
 }
