@@ -18,4 +18,7 @@ Browser Factory Pattern
 Web Driver Manager
 Dependency Injection Pattern
 Singleton Pattern
-
+Sharing Test Context
+Sharing Scenario Context
+Sharing Test State
+Dependency Injection Container using PicoContainer
