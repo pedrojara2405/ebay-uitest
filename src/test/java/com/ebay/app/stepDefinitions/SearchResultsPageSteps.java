@@ -26,11 +26,9 @@ public class SearchResultsPageSteps {
 
     @When("^user orders the products by \"([^\"]*)\" in \"([^\"]*)\" mode$")
     public void orders_the_products_by(String field, String mode) {
-        //_driver.navigate().to("http://shop.demoqa.com/?s=" + something + "&post_type=product");
     }
 
     @Then("^the test takes the first \"([^\"]*)\" products with their prices$")
     public void takes_the_first_products_with_their_prices(String numberResults) {
-        //_driver.navigate().to("http://shop.demoqa.com/?s=" + something + "&post_type=product");
     }
 }

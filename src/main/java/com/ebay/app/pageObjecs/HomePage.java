@@ -13,7 +13,8 @@ public class HomePage {
         PageFactory.initElements(driver, this);
     }
 
-    public void navigateTo_HomePage() {
+    public void
+    navigateTo_HomePage() {
         _driver.get(FileReaderManager.getInstance().getConfigReader().getApplicationUrl());
     }
 }

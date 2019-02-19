@@ -19,11 +19,9 @@ public class ConsoleResultsPageSteps {
 
     @Then("^the test prints in console the number of results$")
     public void prints_in_console_the_numbers_of_results() {
-        //_driver.navigate().to("http://shop.demoqa.com/?s=" + something + "&post_type=product");
     }
 
     @Then("^the test asserts the order taking the first \"([^\"]*)\" results$")
     public void asserts_the_order_taking_the_first_results(String numberResults) {
-        //_driver.navigate().to("http://shop.demoqa.com/?s=" + something + "&post_type=product");
     }
 }
